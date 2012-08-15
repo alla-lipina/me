@@ -3,78 +3,68 @@
 <head>
 	<meta charset="UTF-8" />
 	 <link rel="stylesheet" href="style.css" />
-</head>	
-
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
 <body>
-	<header>
-		<img src="myphoto.png">
-		<h1>Alla Lipina</h1>
-		<span>Front-end developer</span>
-		<ul>
-			<li class='contact'>mobile: +79500167847</li>
-			<li class='contact'>mail: alla.lipina@gmail.com</li>
-			<li class='contact'>skype: alla.lipina</li>
-		</ul>	
-	</header>
-
-	<h2>Образование</h2>
-	<article class='education'>
-		<p>
-			<span class='mark-date'>2012</span>
-			<span class='mark-text'>СПбГУ</span>
-			факультет искусств, кафедра прикладной информатики в искусстве и гум.науках, специалист
-		</p>
-		<h3>знание языков</h3>
-		<ul class='lang'>
-			<li>английский</li>
-			<li>французский</li>
+	<div class='card'>
+		<h1>Алла Липина</h1>
+		<h2>front-end developer</h2>
+		<ul class='contact-info'>
+			<li>+79500167847</li>
+			<li>alla.lipina@gmail.com</li>
+			<li>skype: alla.lipina</li>
 		</ul>
-		<h3>курсы</h3>
-		<ul>
-			<li>
-				<span class='mark-date'>2012</span>
-				<span class='mark-text'>ITMozg.ru</span>
-				весенняя школа программирования frontend (html, css, js)
-			</li>
-			<li>
-				<span class='mark-date'>2011</span>
-				<span class='mark-text'>Saimaa University of Applied Sciences</span>
-				обучение на факультете искусств
-			</li>
-			<li>
-				<span class='mark-date'>2010</span>
-				<span class='mark-text'>University of Caen Lower Normandy</span> обучение французскому языку
-			</li>
+		<ul class='social-links'>
+			<li class='linkedin'><a href="#"></a></li>
+			<li class='facebook'><a href="#"></a></li>
+			<li class='twitter'><a href="#"></a></li>
 		</ul>
+	</div>
+	<nav>
+		<ul>
+			<li id="edu"><a href="#education">образование</a></li>
+			<li id="wrk"><a href="#work">опыт работы</a></li>
+			<li id="skl"><a href="#skill">навыки</a></li>
+		</ul>
+	</nav>
+	<article id='education'>
+		<p class='date'>2012</p><p class='place'>СПбГУ</p> 
+		<p class='text'>факультет искусств, кафедра прикладной информатики в искусстве и гум.науках,	специалист</p>
+		<p class='extra'>дополнительное образование:</p>
+		<p class='date'>2012</p><p class='place'>ITMOZG.RU</p> 
+		<p class='text'>весенняя школа программирования frontend (html, css, js) </p>
+		<p class='date'>2011</p><p class='place'>Saimaa University of Applied Sciences</p> 
+		<p class='text'>Exchange student programm, Art Faculty</p>
+		<p class='date'>2010</p><p class='place'>University of Caen Lower Normandy</p> 
+		<p class='text'>Langues vivantes étrangères (Delf B1)</p>
 	</article>
-
-	<h2>Опыт работы</h2>
-	<article class='work'>
-		<ul>
-			<li><span class='mark-date'>июль 2012</span>
-				<span class='mark-text'>LVProduce</span>
-			</li>
-			<li>
-				<span class='mark-date'>c 2009</span>
-				<span class='mark-text'>freelance</span>
-			</li>
-		</ul>
+	<article id='work'>
+		<p class='date'>2012</p><p class='place'>lvproduce</p> 
+		<p class='text'>Разработка интернет магазинов на CMS Magento.</p>
+		<p class='date'>2009-2012</p><p class='place'>freelance</p> 
+		<p class='text'>Разработка сайта фестиваля Тундик.
+Организация фестиваля искусств СПбГУ в Лофт Проект ЭТАЖИ (2010г).
+Репетитортство по английскому языку.</p>
+<p class='extra'>портфолио:</p>
+<ul>
+	<li><a href="#">сайт фестиваля</a></li>
+	<li><a href="#">браузерная игра</a></li>
+	<li><a href="#">визитки</a></li>
+</ul>
 	</article>
-	
-	<h2>навыки</h2>
-	<article class='skills'>
-		<ul>
-			<li><span class='mark-text'>вёрстка</span> HTML(5), CSS(3)</li>
-			<li><span class='mark-text'>языки программирования</span>Javascript (библиотеки jQuery, jQuery UI), Processing </li>
-			<li><span class='mark-text'>cvs</span>git</li>
-			<li><span class='mark-text'>cms</span>Magento, Wordpress</li>
-			<li><span class='mark-text'>os</span>MacOS, Windows</li>
-			<li><span class='mark-text'>Adobe</span>Photoshop, Fireworks</li>
-			<li><span class='mark-text'>фреймворк</span>Construct 2</li>
-		</ul>
+	<article id='skill'>
+		<p><span>вёрстка:</span> (X)HTML[5], CSS[3]</p>
+		<p><span>языки программирования:</span> Javascript (библиотеки jQuery, jQuery UI), Processing </p>
+		<p><span>CVS:</span> git</p>
+		<p><span>CMS:</span> Wordpress, Magento</p>
+		<p><span>Adobe:</span> Photoshop, Fireworks</p>
 	</article>
+	<script>
+ $('nav a').on('click', function(){
+	$($(this).attr('href')).css('display', 'block');});
 
-	<footer>github</footer>
-</body>
 
+	</script>
+	<footer><p>Исходный код этого сайта вы можете посмотреть на <a href="#">GitHub</a>.</p></footer>
+</body>	
 </html>

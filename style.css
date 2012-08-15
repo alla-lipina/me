@@ -1,119 +1,143 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+/* Reset CSS from Yahoo */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-collapse:collapse;
+	border-spacing:0;
 }
-
-/*Style for the site*/
-
-
-
-/*Global*/
-
-body {
-	color: #555;
-	min-width: 1000px;
+fieldset,img { 
+	border:0;
 }
-h1 {
-font-size: 40px;
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
 }
-h2 {
-	float: left;
-	width: 18%;
-	font-size: 25px;
-	background: #FFBFBF;
-	color: #fff;
-	text-align: right;
-	text-transform: uppercase;
+ol,ul {
+	list-style:none;
 }
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* end of reset */
 
-h3 {
-	font-size: 20px;
-}
-p {float: left;}
-
-header {
-    width: 500px;
-    height: 200px;
-    background: #FFBFBF;
-    margin: 5% auto;
-    box-shadow: 0 -5px 10px #999;
-}
-header img { 
-	height: 200px;
-	width: auto;
-	background: #eee;
-	float: left;
-}
-header h1 {
-float:right;
-padding: 10px 20px;
-}
-
-header span {
-float:right;
-font-size: 20px;
-padding: 10px 20px;
-}
-
-header ul {
-	float: right;
-	width: 300px;
-	text-align:right;
-	padding: 10px 20px 0 0;
+/* Fonts */
+@font-face {
+    font-family: 'cuprumregular';
+    src: url('font/cuprum-regular-webfont.eot');
+    src: url('font/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/cuprum-regular-webfont.woff') format('woff'),
+         url('font/cuprum-regular-webfont.ttf') format('truetype'),
+         url('font/cuprum-regular-webfont.svg#cuprumregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
-article {
-margin: 5% 20%;
+@font-face {
+    font-family: 'intro_regular';
+    src: url('font/intro-webfont.eot');
+    src: url('font/intro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/intro-webfont.woff') format('woff'),
+         url('font/intro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
-.mark-date {
-	color: #999;
-	padding-right: 20px;
+/* My StyleSheet */
+body {background: url('img/bg_wood.png') repeat; font: 16px 'cuprumregular';}
+
+.card {width:660px; height:300px; background: url('img/profile_pic.png') no-repeat bottom left #fff; border:1px solid #000; margin: 60px auto 0;}
+
+h1 {font-size: 38px; font-family: 'intro_regular'; background:#000; color:#fff; margin:20px 20px 0 299px;
+animation:myfirst 5s;
+-moz-animation:myfirst 5s; /* Firefox */
+-webkit-animation:myfirst 5s; /* Safari and Chrome */
+-o-animation:myfirst 5s; /* Opera */
 }
-.mark-text {
-	color: #FFBFBF;
-	padding-right: 20px;
+
+@keyframes myfirst
+{
+from {color:red;}
+to {color:yellow;}
 }
-footer {
-	clear: both;
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {color:red;}
+to {color:yellow;}
 }
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {color:red;}
+to {color:yellow;}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {color:red;}
+to {color:yellow;}
+}
+
+h2 {font-size: 40px;}
+
+.card h1, h2, ul {text-align:right; padding: 10px 20px;}
+
+ul.contact-info {}
+ul.social-links {padding:0 20px; margin-top:15px;}
+ul.social-links li {float:right; width:36px; height:36px; margin-left: 10px;}
+ul.social-links li a {padding: 10px 18px; line-height:36px;}
+li.linkedin {background:url('img/social-in.png') no-repeat;}
+li.facebook {background:url('img/social-f.png') no-repeat;}
+li.twitter {background:url('img/social-tw.png') no-repeat;}
+
+
+nav {width:660px; height:40px; background:#000; margin:auto; border:1px solid #000; font-family: 'intro_regular';}
+nav:hover {width:700px;}
+
+nav ul {width:620px; margin:auto;}
+nav li {float:left; padding: 0 47px; }
+nav a {color:#fff; text-transform:uppercase; text-decoration:none;}
+nav a:hover {color:#BFDFFF;}
+
+article {width:562px; height:auto; margin: 0 auto 30px; padding: 50px; background: rgba(255, 255, 255, 0.8); }
+
+#education {display:none;}
+.text { padding: 0 0 10px 95px;}
+.date, .place {display:inline; margin-right: 50px; font: 14px 'intro_regular';}
+.date {padding: 0 5px; float:left; width: 35px;}
+.date:first-child {background: #000; color: #fff;}
+.extra {color:#999; padding:20px 0 10px 5px;}
+
+#work {display: none;}
+#work ul {height:70px;}
+#work ul li {float:left; width: 90px; height: 70px; background: #fff; border: 1px solid #999; margin-right:20px; text-align: center; }
+#work ul li:nth-child(1) {background:red;}
+
+#skill {display:none;}
+#skill span {font: 12px 'intro_regular'; padding-right:10px;}
+
+footer {width: 660px; text-align: center; margin: 20px auto; color:#666;}
+footer a {font: 14px 'intro_regular'; text-decoration:none; color:#666;}
+footer a:hover {text-decoration: underline;}
+
+
+
+
+
+
+
+
+
