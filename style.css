@@ -58,37 +58,45 @@ abbr,acronym { border:0;
 /* My StyleSheet */
 body {background: url('img/bg_wood.png') repeat; font: 16px 'cuprumregular';}
 
-.card {width:660px; height:300px; background: url('img/profile_pic.png') no-repeat bottom left #fff; border:1px solid #000; margin: 60px auto 0;}
+.card {width:660px; height:300px; background: url('img/profile_pic.png') no-repeat bottom left #fff; border:1px solid #000; margin: 60px auto 0;box-shadow: 0px -5px 30px #666;}
 
 h1 {font-size: 38px; font-family: 'intro_regular'; background:#000; color:#fff; margin:20px 20px 0 299px;
-animation:myfirst 5s;
--moz-animation:myfirst 5s; /* Firefox */
--webkit-animation:myfirst 5s; /* Safari and Chrome */
--o-animation:myfirst 5s; /* Opera */
+animation:myfirst 10s;
+-moz-animation:myfirst 10s; /* Firefox */
+-webkit-animation:myfirst 10s; /* Safari and Chrome */
+-o-animation:myfirst 10s; /* Opera */
 }
 
 @keyframes myfirst
 {
-from {color:red;}
-to {color:yellow;}
+0%   {color: #FFEFBF;}
+25%  {color: #BFDFFF;}
+50%  {color: #FFCFBF;}
+100% {color: #ffffff;}
 }
 
 @-moz-keyframes myfirst /* Firefox */
 {
-from {color:red;}
-to {color:yellow;}
+0%   {color: #FFEFBF;}
+25%  {color: #BFDFFF;}
+50%  {color: #FFCFBF;}
+100% {color: #ffffff;}
 }
 
 @-webkit-keyframes myfirst /* Safari and Chrome */
 {
-from {color:red;}
-to {color:yellow;}
+0%   {color: #FFEFBF;}
+25%  {color: #BFDFFF;}
+50%  {color: #FFCFBF;}
+100% {color: #ffffff;}
 }
 
 @-o-keyframes myfirst /* Opera */
 {
-from {color:red;}
-to {color:yellow;}
+0%   {color: #FFEFBF;}
+25%  {color: #BFDFFF;}
+50%  {color: #FFCFBF;}
+100% {color: #ffffff;}
 }
 
 h2 {font-size: 40px;}
@@ -104,8 +112,8 @@ li.facebook {background:url('img/social-f.png') no-repeat;}
 li.twitter {background:url('img/social-tw.png') no-repeat;}
 
 
-nav {width:660px; height:40px; background:#000; margin:auto; border:1px solid #000; font-family: 'intro_regular';}
-nav:hover {width:700px;}
+nav {width:660px; height:40px; background:#000; margin:auto; border:1px solid #000; font-family: 'intro_regular';box-shadow: 0px 12px 30px #666;}
+
 
 nav ul {width:620px; margin:auto;}
 nav li {float:left; padding: 0 47px; }
@@ -114,20 +122,31 @@ nav a:hover {color:#BFDFFF;}
 
 article {width:562px; height:auto; margin: 0 auto 30px; padding: 50px; background: rgba(255, 255, 255, 0.8); }
 
-#education {display:none;}
+#education {}
 .text { padding: 0 0 10px 95px;}
 .date, .place {display:inline; margin-right: 50px; font: 14px 'intro_regular';}
 .date {padding: 0 5px; float:left; width: 35px;}
 .date:first-child {background: #000; color: #fff;}
 .extra {color:#999; padding:20px 0 10px 5px;}
 
-#work {display: none;}
+#work {}
 #work ul {height:70px;}
-#work ul li {float:left; width: 90px; height: 70px; background: #fff; border: 1px solid #999; margin-right:20px; text-align: center; }
-#work ul li:nth-child(1) {background:red;}
+#work ul li {float:left; width: 80px; height: 60px; border: 1px solid #999; margin-right:20px; text-align: center; padding:5px}
+#work a {font-size: 18px; color:#333; line-height:25px;}
 
-#skill {display:none;}
+li.link-tundik {background: url('img/tundik1.png');}
+li.link-game {background: url('img/kalevala1.png');}
+li.link-card {background: url('img/aqua1.png');}
+
+li.link-tundik:hover {background: url('img/tundik.png');}
+li.link-game:hover {background: url('img/kalevala.png');}
+li.link-card:hover {background: url('img/aqua.png');}
+
+
+#skill {}
 #skill span {font: 12px 'intro_regular'; padding-right:10px;}
+.cv-download {padding-top:30px; text-align:right; color:#999;}
+.cv-download a {color:#666;}
 
 footer {width: 660px; text-align: center; margin: 20px auto; color:#666;}
 footer a {font: 14px 'intro_regular'; text-decoration:none; color:#666;}

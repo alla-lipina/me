@@ -6,6 +6,7 @@
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
+	<div class='wapper'></div>
 	<div class='card'>
 		<h1>Алла Липина</h1>
 		<h2>front-end developer</h2>
@@ -15,9 +16,9 @@
 			<li>skype: alla.lipina</li>
 		</ul>
 		<ul class='social-links'>
-			<li class='linkedin'><a href="#"></a></li>
-			<li class='facebook'><a href="#"></a></li>
-			<li class='twitter'><a href="#"></a></li>
+			<li class='linkedin'><a href="http://ru.linkedin.com/pub/alla-lipina/44/382/946" target='_blank'></a></li>
+			<li class='facebook'><a href="http://www.facebook.com/alla.lucien" target='_blank'></a></li>
+			<li class='twitter'><a href="https://twitter.com/alla_lipina" target='_blank'></a></li>
 		</ul>
 	</div>
 	<nav>
@@ -27,44 +28,54 @@
 			<li id="skl"><a href="#skill">навыки</a></li>
 		</ul>
 	</nav>
-	<article id='education'>
+	<article id='education' class='artcl'>
 		<p class='date'>2012</p><p class='place'>СПбГУ</p> 
 		<p class='text'>факультет искусств, кафедра прикладной информатики в искусстве и гум.науках,	специалист</p>
 		<p class='extra'>дополнительное образование:</p>
 		<p class='date'>2012</p><p class='place'>ITMOZG.RU</p> 
 		<p class='text'>весенняя школа программирования frontend (html, css, js) </p>
 		<p class='date'>2011</p><p class='place'>Saimaa University of Applied Sciences</p> 
-		<p class='text'>Exchange student programm, Art Faculty</p>
+		<p class='text'>обучение на факультете искусств</p>
 		<p class='date'>2010</p><p class='place'>University of Caen Lower Normandy</p> 
-		<p class='text'>Langues vivantes étrangères (Delf B1)</p>
+		<p class='text'>изучение французского языка (Delf B1)</p>
 	</article>
-	<article id='work'>
+
+	<article id='work' class='artcl'>
 		<p class='date'>2012</p><p class='place'>lvproduce</p> 
 		<p class='text'>Разработка интернет магазинов на CMS Magento.</p>
 		<p class='date'>2009-2012</p><p class='place'>freelance</p> 
-		<p class='text'>Разработка сайта фестиваля Тундик.
-Организация фестиваля искусств СПбГУ в Лофт Проект ЭТАЖИ (2010г).
-Репетитортство по английскому языку.</p>
+		<p class='text'>Разработка сайта фестиваля Тундик.<br>
+Организация фестиваля искусств СПбГУ в Лофт Проект ЭТАЖИ (2010г).<br>
+Преподавание английского языка.</p>
 <p class='extra'>портфолио:</p>
 <ul>
-	<li><a href="#">сайт фестиваля</a></li>
-	<li><a href="#">браузерная игра</a></li>
-	<li><a href="#">визитки</a></li>
+	<li class="link-tundik"><a href="#">сайт фестиваля</a></li>
+	<li class="link-game"><a href="#">браузерная игра</a></li>
+	<li class="link-card"><a href="#">визитки</a></li>
 </ul>
 	</article>
-	<article id='skill'>
+	<article id='skill' class='artcl'>
 		<p><span>вёрстка:</span> (X)HTML[5], CSS[3]</p>
 		<p><span>языки программирования:</span> Javascript (библиотеки jQuery, jQuery UI), Processing </p>
-		<p><span>CVS:</span> git</p>
+		<p><span>VCS:</span> git</p>
 		<p><span>CMS:</span> Wordpress, Magento</p>
 		<p><span>Adobe:</span> Photoshop, Fireworks</p>
+		<p class='cv-download'>Скачать резюме в <a href="">.pdf</a></p>
 	</article>
-	<script>
- $('nav a').on('click', function(){
-	$($(this).attr('href')).css('display', 'block');});
 
+	<script>
+	$('.artcl').hide()
+ 	$('nav a').on('click', function(){
+		 	
+		 	$('.artcl').slideUp('slow');
+
+		 	if (!$($(this).attr('href')).is(':visible')) {
+			$($(this).attr('href')).slideDown("slow");}
+
+			return false});
+	$('body').dblclick(function(){$('.artcl').slideUp('slow');});
 
 	</script>
-	<footer><p>Исходный код этого сайта вы можете посмотреть на <a href="#">GitHub</a>.</p></footer>
+	<footer><p>Исходный код этого сайта вы можете посмотреть на <a href="https://github.com/lipina/me" target="_blank">GitHub</a>.</p></footer>
 </body>	
 </html>
