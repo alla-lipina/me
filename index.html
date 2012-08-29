@@ -4,79 +4,97 @@
 	<meta charset="UTF-8" />
 	 <link rel="stylesheet" href="style.css" />
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	 <!--[if IE]>
+		 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		 <link rel="stylesheet" type="text/css" href="ie.css" />
+	<![endif]-->
 </head>
 <body>
 	<div class='wrapper'>
-		<div class='card'>
-			<h1>Алла Липина</h1>
-			<h2>front-end developer</h2>
-			<ul class='contact-info'>
-				<li>+79500167847</li>
-				<li>alla.lipina@gmail.com</li>
-				<li>skype: alla.lipina</li>
+		<div class='main'>
+			<header>
+				<h1 >Алла Липина</h1>
+				<h2>front-end developer</h2>
+				<ul class='contact-info'>
+					<li>+79500167847</li>
+					<li>alla.lipina@gmail.com</li>
+					<li>skype: alla.lipina</li>
+				</ul>
+				<ul class='social-links'>
+					<li class='linkedin'><a href="http://ru.linkedin.com/pub/alla-lipina/44/382/946" target='_blank'></a></li>
+					<li class='facebook'><a href="http://www.facebook.com/alla.lucien" target='_blank'></a></li>
+					<li class='twitter'><a href="https://twitter.com/alla_lipina" target='_blank'></a></li>
+				</ul>
+			</header>
+			
+			<nav>
+				<ul class='nav'>
+					<li><a class='nav-item' href="#education">образование</a></li>
+					<li><a class='nav-item' href="#work">опыт работы</a></li>
+					<li><a class='nav-item' href="#skill">навыки</a></li>
+				</ul>
+			</nav>
+			
+			<article id='education' class='ie-article'>
+				<p class='date'>2012</p>
+					<p class='place'>СПбГУ</p> 
+					<p class='text'>факультет искусств, кафедра прикладной информатики в искусстве и гум.науках,	специалист</p>
+				<p class='extra'>дополнительное образование:</p>
+				<p class='date'>2012</p>
+					<p class='place'>ITMOZG.RU</p> 
+					<p class='text'>весенняя школа программирования frontend (html, css, js) </p>
+				<p class='date'>2011</p>
+					<p class='place'>Saimaa University of Applied Sciences</p> 
+					<p class='text'>обучение на факультете искусств</p>
+				<p class='date'>2010</p>
+					<p class='place'>University of Caen Lower Normandy</p> 
+					<p class='text'>изучение французского языка (Delf B1)</p>
+					<a href="cv.pdf"><p class='cv-download'>Скачать резюме в .pdf</p></a>
+			</article>
+	
+			<article id='work' class='ie-article'>
+				<p class='date'>2012</p>
+					<p class='place'>lvproduce</p> 
+					<p class='text'>Разработка интернет магазинов на CMS Magento.</p>
+				<p class='date'>2009<br/>&ndash;2012</p>
+					<p class='place'>freelance</p> 
+					<p class='text'>Разработка сайта фестиваля Тундик.<br>
+									Организация фестиваля искусств СПбГУ в Лофт Проект ЭТАЖИ (2010г).<br>
+									Преподавание английского языка.</p>
+				<p class='extra'>портфолио:</p>
+				<ul class='portfolio'>
+					<li class="link-tundik"><a href="http://tundik.ru/" target="_blank">сайт фестиваля</a></li>
+					<li class="link-game"><a href="http://kalevala.lipina.me/" target="_blank">браузерная игра</a></li>
+					<li class="link-card"><a href="http://st.free-lance.ru/users/allalucien/upload/f_4fedbfb64a443.jpg" target="_blank">визитки</a></li>
+				</ul>
+				<a href="cv.pdf"><p class='cv-download'>Скачать резюме в .pdf</p></a>
+			</article>
+			
+			<article id='skill' class='ie-article'>
+			<ul class='skills'>
+				<li class="skill-item"><span>вёрстка:</span> (X)HTML[5], CSS[3]</li>
+				<li class="skill-item"><span>языки программирования:</span> Javascript (библиотеки jQuery, jQuery UI), Processing </li>
+				<li class="skill-item"><span>VCS:</span> git</li>
+				<li class="skill-item"><span>CMS:</span> Wordpress, Magento</li>
+				<li class="skill-item"><span>Adobe:</span> Photoshop, Fireworks</li>
+				<a href="cv.pdf"><p class='cv-download'>Скачать резюме в .pdf</p></a>
 			</ul>
-			<ul class='social-links'>
-				<li class='linkedin'><a href="http://ru.linkedin.com/pub/alla-lipina/44/382/946" target='_blank'></a></li>
-				<li class='facebook'><a href="http://www.facebook.com/alla.lucien" target='_blank'></a></li>
-				<li class='twitter'><a href="https://twitter.com/alla_lipina" target='_blank'></a></li>
-			</ul>
-		</div>
-		<nav>
-			<ul>
-				<li id="edu"><a href="#education">образование</a></li>
-				<li id="wrk"><a href="#work">опыт работы</a></li>
-				<li id="skl"><a href="#skill">навыки</a></li>
-			</ul>
-		</nav>
-		<article id='education' class='artcl'>
-			<p class='date'>2012</p><p class='place'>СПбГУ</p> 
-			<p class='text'>факультет искусств, кафедра прикладной информатики в искусстве и гум.науках,	специалист</p>
-			<p class='extra'>дополнительное образование:</p>
-			<p class='date'>2012</p><p class='place'>ITMOZG.RU</p> 
-			<p class='text'>весенняя школа программирования frontend (html, css, js) </p>
-			<p class='date'>2011</p><p class='place'>Saimaa University of Applied Sciences</p> 
-			<p class='text'>обучение на факультете искусств</p>
-			<p class='date'>2010</p><p class='place'>University of Caen Lower Normandy</p> 
-			<p class='text'>изучение французского языка (Delf B1)</p>
-		</article>
+			</article>
+	
+			<script>
 
-		<article id='work' class='artcl'>
-			<p class='date'>2012</p><p class='place'>lvproduce</p> 
-			<p class='text'>Разработка интернет магазинов на CMS Magento.</p>
-			<p class='date'>2009-2012</p><p class='place'>freelance</p> 
-			<p class='text'>Разработка сайта фестиваля Тундик.<br>
-	Организация фестиваля искусств СПбГУ в Лофт Проект ЭТАЖИ (2010г).<br>
-	Преподавание английского языка.</p>
-	<p class='extra'>портфолио:</p>
-	<ul>
-		<li class="link-tundik"><a href="#">сайт фестиваля</a></li>
-		<li class="link-game"><a href="#">браузерная игра</a></li>
-		<li class="link-card"><a href="#">визитки</a></li>
-	</ul>
-		</article>
-		<article id='skill' class='artcl'>
-			<p><span>вёрстка:</span> (X)HTML[5], CSS[3]</p>
-			<p><span>языки программирования:</span> Javascript (библиотеки jQuery, jQuery UI), Processing </p>
-			<p><span>VCS:</span> git</p>
-			<p><span>CMS:</span> Wordpress, Magento</p>
-			<p><span>Adobe:</span> Photoshop, Fireworks</p>
-			<p class='cv-download'>Скачать резюме в <a href="">.pdf</a></p>
-		</article>
 
-		<script>
-		$('.artcl').hide()
-	 	$('nav a').on('click', function(){
-			 	
-			 	$('.artcl').slideUp('slow');
-
-			 	if (!$($(this).attr('href')).is(':visible')) {
-				$($(this).attr('href')).slideDown("slow");}
-
-				return false});
-		$('body').dblclick(function(){$('.artcl').slideUp('slow');});
-
-		</script>
-		<div class='empty'></div>
+			$('a.nav-item').on('click', function() {
+					$('article').hide();
+					$($(this).attr('href')).fadeIn(1000);
+			});
+			$('body').on('dblclick', function(){
+					$('article').hide();
+			});
+		 	
+				 		
+			</script>
+		</div>	
 	</div>
 	<footer><p>Исходный код этого сайта вы можете посмотреть на <a href="https://github.com/lipina/me" target="_blank">GitHub</a>.</p></footer>
 </body>	

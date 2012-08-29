@@ -1,38 +1,38 @@
-/* Reset CSS from Yahoo */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-    margin: 0;
-    padding: 0;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-fieldset, img {
-    border: 0;
-}
-address, caption, cite, code, dfn, em, strong, th, var {
-    font-style: normal;
-    font-weight: normal;
-}
-ol, ul {
-    list-style: none;
-}
-caption, th {
-    text-align: left;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: normal;
-}
-q:before, q:after {
-    content: '';
-}
-abbr, acronym {
-    border: 0;
-}
-/* end of reset */
+/* ------------------------------------------------- Reset CSS from Yahoo ------------------------------------------------- */
+		body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+		    margin: 0;
+		    padding: 0;
+		}
+		table {
+		    border-collapse: collapse;
+		    border-spacing: 0;
+		}
+		fieldset, img {
+		    border: 0;
+		}
+		address, caption, cite, code, dfn, em, strong, th, var {
+		    font-style: normal;
+		    font-weight: normal;
+		}
+		ol, ul {
+		    list-style: none;
+		}
+		caption, th {
+		    text-align: left;
+		}
+		h1, h2, h3, h4, h5, h6 {
+		    font-size: 100%;
+		    font-weight: normal;
+		}
+		q:before, q:after {
+		    content: '';
+		}
+		abbr, acronym {
+		    border: 0;
+		}
+/* ------------------------------------------------- end of reset ------------------------------------------------- */
 
-/* Fonts */
+/* ------------------------------------------------- Fonts link */
 @font-face {
     font-family: 'cuprumregular';
     src: url('font/cuprum-regular-webfont.eot');
@@ -49,7 +49,7 @@ abbr, acronym {
     font-style: normal;
 }
 
-/* Animate color for h1 */
+/* ------------------------------------------------- Animate color for h1 */
 @keyframes myfirst
 {
 0%   {color: #FFEFBF;}
@@ -58,7 +58,7 @@ abbr, acronym {
 100% {color: #ffffff;}
 }
 
-@-moz-keyframes myfirst /* Firefox */
+@-moz-keyframes myfirst /* for Firefox */
 {
 0%   {color: #FFEFBF;}
 25%  {color: #BFDFFF;}
@@ -66,7 +66,7 @@ abbr, acronym {
 100% {color: #ffffff;}
 }
 
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst /* for Safari and Chrome */
 {
 0%   {color: #FFEFBF;}
 25%  {color: #BFDFFF;}
@@ -74,7 +74,7 @@ abbr, acronym {
 100% {color: #ffffff;}
 }
 
-@-o-keyframes myfirst /* Opera */
+@-o-keyframes myfirst /* for Opera */
 {
 0%   {color: #FFEFBF;}
 25%  {color: #BFDFFF;}
@@ -82,15 +82,12 @@ abbr, acronym {
 100% {color: #ffffff;}
 }
 
-/* My StyleSheet */
+/* ------------------------------------------------- My StyleSheet ------------------------------------------------- */
 html, body {
     height: 100%;
     width: 100%;
 }
 
-* html .wrapper {
-    height: 100%;
-}
 body {
     background: url('img/bg_wood.png') repeat;
     font: 16px 'cuprumregular';
@@ -98,25 +95,42 @@ body {
 
 .wrapper {
     position: relative;
+    height: auto;
     min-height: 100%;
-    height: auto !important;
-    height: 100%;
     margin: 0 auto;
 }
-.card {
+
+.main {
+	overflow: auto;
+	margin-bottom: 70px;
+}
+
+/* Opera Fix */
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+header {
     width: 660px;
     height: 300px;
-    background: url('img/profile_pic.png') no-repeat bottom left #fff;
+    margin: 5% auto 0;
     border: 1px solid #000;
-    margin: 8% auto 0;
     box-shadow: 0px -5px 30px #666;
+    -webkit-box-shadow: 0px -5px 30px #666;
+    -moz-box-shadow: 0px -5px 30px #666;
+    background: url('img/profile_pic.png') no-repeat bottom left #fff;
 }
 
 h1 {
-    font: 38px 'intro_regular';
-    background: #000;
+    margin: 20px 20px 0 269px;
+    letter-spacing: 2px;
+    font: 2.5em 'intro_regular';
     color: #fff;
-    margin: 20px 20px 0 299px;
+    background: #000;
     animation: myfirst 10s;
     -moz-animation: myfirst 10s; /* Firefox */
     -webkit-animation: myfirst 10s; /* Safari and Chrome */
@@ -124,18 +138,20 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 2.3em;
 }
 
-.card h1, h2, ul {
+header h1, header h2, header ul {
     text-align: right;
     padding: 10px 20px;
+    
 }
 
 ul.social-links {
     padding: 0 20px;
     margin-top: 15px;
 }
+
 ul.social-links li {
     float: right;
     width: 36px;
@@ -145,7 +161,9 @@ ul.social-links li {
 ul.social-links li a {
     padding: 10px 18px;
     line-height: 36px;
+    cursor: pointer;
 }
+
 li.linkedin {
     background: url('img/social-in.png') no-repeat;
 }
@@ -159,74 +177,88 @@ li.twitter {
 nav {
     width: 660px;
     height: 40px;
-    background: #000;
-    margin: auto;
+    margin: 0 auto 50px;
     border: 1px solid #000;
-    font-family: 'intro_regular';
     box-shadow: 0px 12px 30px #666;
+    -webkit-box-shadow: 0px 12px 30px #666; /*Chrome&Safari*/
+    -moz-box-shadow: 0px 12px 30px #666; /*for Firefox*/
+    font-family: 'intro_regular';
+    background: #000;  
 }
 
-nav ul {
+ul.nav {
     width: 620px;
     margin: auto;
 }
-nav li {
+
+ul.nav li {
     float: left;
-    padding: 0 47px;
+    margin: 10px 45px;
 }
-nav a {
+
+a.nav-item {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
 }
-nav a:hover {
+
+a.nav-item:hover {
     color: #BFDFFF;
 }
 
 article {
+display: none;
+	text-align: left;
     width: 562px;
     height: auto;
-    margin: 0 auto 30px;
+    margin: 0 auto;
     padding: 50px;
-    background: rgba(255, 255, 255, 0.8);
+    opacity: 0.8;
+    background:none;
 }
 
 .text {
     padding: 0 0 10px 95px;
 }
+
 .date, .place {
     display: inline;
     margin-right: 50px;
-    font: 14px 'intro_regular';
+    font: 1em 'intro_regular';
 }
+
 .date {
+    width: 35px;
     padding: 0 5px;
     float: left;
-    width: 35px;
 }
+
 .date:first-child {
     background: #000;
     color: #fff;
 }
+
 .extra {
-    color: #999;
+    color: #666;
     padding: 20px 0 10px 5px;
 }
 
 #work ul {
     height: 70px;
 }
+
 #work ul li {
     float: left;
     width: 80px;
     height: 60px;
     border: 1px solid #999;
     margin-right: 20px;
+    padding: 5px;
     text-align: center;
-    padding: 5px
 }
+
 #work a {
-    font-size: 18px;
+    font-size: 1.0em;
     color: #333;
     line-height: 25px;
 }
@@ -234,52 +266,56 @@ article {
 li.link-tundik {
     background: url('img/tundik1.png');
 }
+li.link-tundik:hover {
+    background: url('img/tundik.png');
+} 
+
 li.link-game {
     background: url('img/kalevala1.png');
 }
-li.link-card {
-    background: url('img/aqua1.png');
-}
-
-li.link-tundik:hover {
-    background: url('img/tundik.png');
-}
 li.link-game:hover {
     background: url('img/kalevala.png');
+}
+
+li.link-card {
+    background: url('img/aqua1.png');
 }
 li.link-card:hover {
     background: url('img/aqua.png');
 }
 
-#skill span {
-    font: 12px 'intro_regular';
+li.skill-item span {
+    font: 0.9em 'intro_regular';
     padding-right: 10px;
 }
-.cv-download {
-    padding-top: 30px;
-    text-align: right;
-    color: #999;
+
+p.cv-download {
+    font-size: 1.0em;
+    margin: 30px -50px 0 0;
+    padding: 8px;
+    float: right;
+    color: #333;
+    border: 1px solid #333;
 }
-.cv-download a {
+p.cv-download a {
     color: #666;
 }
 
-.empty {
-    height: 30px;
-}
 footer {
     position: relative;
     width: 660px;
-    height: 30px;
+    height: 50px;
     text-align: center;
-    margin: -30px auto 0px;
+    margin: -50px auto 0px;
     color: #666;
 }
+
 footer a {
-    font: 14px 'intro_regular';
+    font: 0.8em 'intro_regular';
     text-decoration: none;
     color: #666;
 }
+
 footer a:hover {
     text-decoration: underline;
 }
