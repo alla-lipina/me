@@ -6,7 +6,6 @@ body {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 	/*for IE8*/
 	filter: alpha(opacity=50);		/*for IE7*/
 	width:662px !important;
-
 }
 
 .i-wrapper {
