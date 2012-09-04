@@ -9,9 +9,12 @@ body {
 
 }
 
-.wrapper {display:table;height:100%}
+.i-wrapper {
+	display:table;
+	height:100%;
+}
 
-* html .wrapper {
+* html .i-wrapper {
     height: 100%;
 }
  
