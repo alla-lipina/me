@@ -122,49 +122,38 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 /*------------------------------------------------- Block Header------------------------------------------------- */
 .b-header {
     width: 660px;
-    height: 300px;
-    margin: 5% auto 0;
-    border: 1px solid #000;
+    height: 150px;
+    margin: 0 auto;
     text-align: right;
-    background:  url('img/profile_pic.png') no-repeat left bottom #fff;
-    box-shadow: 0px -5px 30px #666;
-    -webkit-box-shadow: 0px -5px 30px #666;
-    -moz-box-shadow: 0px -5px 30px #666;
+    background:  #fff;
+
 }
 
-.b-header-title {
-    height: 68px;
-    text-align: right;
-    
-    margin: 20px 20px 0 0;
-    
-    
+
+.b-header__position {
+display:inline;
+    padding: 10px 20px;
+    font-size: 1.5em;
 }
+
+/*-------------------------------------------------Block Header Title*/
+.b-header-title {
+    height: 50px;
+    text-align: right;    
+    margin-left: 20px;
+}
+
 .b-header-title__name {
-    float: right;
-    background: #000;
     padding: 10px;
     letter-spacing: 2px;
-    font: 2.5em 'intro_regular';
-    color: #fff;
-    animation: myfirst 10s;
-    -moz-animation: myfirst 10s; /* Firefox */
-    -webkit-animation: myfirst 10s; /* Safari and Chrome */
-    -o-animation: myfirst 10s; /* Opera */
-    
+    font: 1.5em 'intro_regular';
+    color: #666;    
 }
-.b-header__position {
-	text-align: right;
-    padding: 10px 20px;
-    font-size: 2.3em;
-}
-
-
 /*-------------------------------------------------Block Contact Info*/
 .b-contact-info{
 	display: block;
-    text-align: right;
-    
+	float:right;
+    text-align: right;  
 	padding: 15px 20px;
     
 }
@@ -176,102 +165,42 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 /*-------------------------------------------------Block Social Links*/
 
 .b-social-links {
-    display: block;
-    width: auto;
-    height: 36px;
-    padding: 5px 20px;
-}
-
-.b-social-links__item {
-    float: right;
-    padding-left: 10px;
-}
-
-.b-social-links__link {
-    line-height: 36px;
-    display: block;
-    height: 36px;
-    width: 36px;
-}
-
-.b-social-links__linkedin {
-    background: url('img/social-in.png') no-repeat;
-}
-.b-social-links__facebook {
-    background: url('img/social-f.png') no-repeat;
-}
-.b-social-links__twitter {
-    background: url('img/social-tw.png') no-repeat;
+    display: none;
 }
 
 
 
 /*-------------------------------------------------Block Horizontal Menu*/
 .b-menu-horiz {
-    width: 660px;
-    height: 40px;
-    margin: 0 auto 50px;
-    border: 1px solid #000;
-    box-shadow: 0px 12px 30px #666;
-    -webkit-box-shadow: 0px 12px 30px #666; /*Chrome&Safari*/
-    -moz-box-shadow: 0px 12px 30px #666; /*for Firefox*/
-    font-family: 'intro_regular';
-    background: #000;  
-}
-
-.b-menu-horiz__menu {
-    width: 620px;
-    margin: auto;
-}
-
-.b-menu-horiz__item {
-    float: left;
-    margin: 10px 45px;
-}
-
-.b-menu-horiz__item-link {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.b-menu-horiz__item-link:hover {
-    color: #BFDFFF;
-}
-.b-menu-horiz__item-link_selected {
-	color: #ffd0c0;
+   display:none;
 }
 
 
 /*-------------------------------------------------Block Article-------------------------------------------------*/
 .b-article {
+	display:block !important;
 	text-align: left;
     width: 562px;
     height: auto;
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
     opacity: 0.8;
     background:none;
 }
 
 .b-article__title{
+	display:block !important;
     font: 1.2em 'intro_regular';
     margin-bottom: 20px;
+    color:#666;
 }
 
 .b-article__cv-download {
-    font-size: 1.0em;
-    margin: 30px -50px 0 0;
-    padding: 8px;
-    float: right;
-    color: #333;
-	
-    text-decoration: underline;
+   display:none;
 }
 
-.b-article__extra, .b-article__portfolio-title {
+.b-article__extra {
     padding: 10px 0;
-	
     color: #666;
 }
 
@@ -298,44 +227,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 
 /*-------------------------------------------------Block Portfolio*/
-.b-portfolio__list {
-    height: 90px;
+.b-portfolio__list, .b-article__portfolio-title {
+	display:none; 
 }
-
-.b-portfolio__item {
-    float: left;
-    width: 80px;
-    height: 50px;
-    border: 1px solid #999;
-    margin-right: 20px;
- 
-    padding: 10px 5px;
-    text-align: center;
-}
-.b-portfolio__link{
-    color: #333;
-}
-
-.b-portfolio__item-tundik {
-    background: url('img/tundik1.png');
-}
-.b-portfolio__item-tundik:hover {
-    background: url('img/tundik.png');
-} 
-
-.b-portfolio__item-game {
-    background: url('img/kalevala1.png');
-}
-.b-portfolio__item-game:hover {
-    background: url('img/kalevala.png');
-}
-
-.b-portfolio__item-card {
-    background: url('img/aqua1.png');
-}
-.b-portfolio__item-card:hover {
-    background: url('img/aqua.png');
-    }
 
 
 /*-------------------------------------------------Block Skills List*/
@@ -346,25 +240,5 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 
 /*-------------------------------------------------Block Footer-------------------------------------------------*/
 .b-footer {
-    position: relative;
-    width: 660px;
-    height: 50px;
-    text-align: center;
-    margin: -50px auto 0px;
-
-}
-
-.b-footer__text {
-    
-    color: #666; 
-}
-
-.b-footer__link {
-    font: 0.8em 'intro_regular';
-    text-decoration: none;
-    color: #666;
-}
-
-.b-footer__link:hover {
-    text-decoration: underline;
-}
+    display: none;
+    }

@@ -2,11 +2,11 @@ body {
  	text-align: center; /*IE7 block .card centered*/
 }
 
-article.ie-article {
+.b-article_ie {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 	/*for IE8*/
-	filter: alpha(opacity=50);											/*for IE7*/
+	filter: alpha(opacity=50);		/*for IE7*/
 	width:662px !important;
-	
+
 }
 
 .wrapper {display:table;height:100%}
@@ -14,26 +14,31 @@ article.ie-article {
 * html .wrapper {
     height: 100%;
 }
+ 
+.b-social-links__link {
+	width:36px\9;
+	height:36px\9;
 
-ul.social-links li a {
-	width:36px;
-	height:36px;
-	padding:0 !important;
 }
 
-header {
-	filter: progid:DXImageTransform.Microsoft.shadow(direction=0, color=#999999, strength=6)
-	progid:DXImageTransform.Microsoft.shadow(direction=90, color=#999999, strength=6)
-	progid:DXImageTransform.Microsoft.shadow(direction=270, color=#999999, strength=6);
-	zoom: 1;
-	height: 299px !important;
-	border-bottom: none !important;
+.b-portfolio__item {
+    width: 90px\9 !important;
+    height: 70px\9 !important;
+
 }
 
-nav {
-	filter: progid:DXImageTransform.Microsoft.shadow(direction=180, color=#999999, strength=6)
-	progid:DXImageTransform.Microsoft.shadow(direction=91, color=#999999, strength=6)
-	progid:DXImageTransform.Microsoft.shadow(direction=271, color=#999999, strength=6);
-	zoom: 1;
-	border:none !important;
+.b-header {
+	filter: 
+		progid:DXImageTransform.Microsoft.shadow(direction=0, color=#999999, strength=6)\9
+		progid:DXImageTransform.Microsoft.shadow(direction=90, color=#999999, strength=6)\9
+		progid:DXImageTransform.Microsoft.shadow(direction=270, color=#999999, strength=6)\9;
+	zoom: 1\9;
+}
+
+.b-menu-horiz {
+	filter: progid:DXImageTransform.Microsoft.shadow(direction=180, color=#999999, strength=6)\9
+	progid:DXImageTransform.Microsoft.shadow(direction=91, color=#999999, strength=6)\9
+	progid:DXImageTransform.Microsoft.shadow(direction=271, color=#999999, strength=6)\9;
+	zoom: 1\9;
+	border:none\9 !important;
 }
