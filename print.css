@@ -1,235 +1,177 @@
 /* ------------------------------------------------- Reset CSS from Yahoo ------------------------------------------------- */
-		body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-		    margin: 0;
-		    padding: 0;
-		}
-		table {
-		    border-collapse: collapse;
-		    border-spacing: 0;
-		}
-		fieldset, img {
-		    border: 0;
-		}
-		address, caption, cite, code, dfn, em, strong, th, var {
-		    font-style: normal;
-		    font-weight: normal;
-		}
-		ol, ul {
-		    list-style: none;
-		}
-		caption, th {
-		    text-align: left;
-		}
-		h1, h2, h3, h4, h5, h6 {
-		    font-size: 100%;
-		    font-weight: normal;
-		}
-		q:before, q:after {
-		    content: '';
-		}
-		abbr, acronym {
-		    border: 0;
-		}
-		img {
-			margin:0;
-			padding:0;
-			border:none;
-		}
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    fieldset, img {
+        border: 0;
+    }
+    address, caption, cite, code, dfn, em, strong, th, var {
+        font-style: normal;
+        font-weight: normal;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    caption, th {
+        text-align: left;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 100%;
+        font-weight: normal;
+    }
+    q:before, q:after {
+        content: '';
+    }
+    abbr, acronym {
+        border: 0;
+    }
+    img {
+        margin:0;
+        padding:0;
+        border:none;
+    }
 /* ------------------------------------------------- end of reset ------------------------------------------------- */
 
 /* ------------------------------------------------- Fonts link */
-@font-face {
-    font-family: 'cuprumregular';
-    src: url('font/cuprum-regular-webfont.eot');
-    src: url('font/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/cuprum-regular-webfont.woff') format('woff'), url('font/cuprum-regular-webfont.ttf') format('truetype'), url('font/cuprum-regular-webfont.svg#cuprumregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'intro_regular';
-    src: url('font/intro-webfont.eot');
-    src: url('font/intro-webfont.eot?#iefix') format('embedded-opentype'), url('font/intro-webfont.woff') format('woff'), url('font/intro-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* ------------------------------------------------- Animate color for h1 */
-@keyframes myfirst
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-@-moz-keyframes myfirst /* for Firefox */
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-@-webkit-keyframes myfirst /* for Safari and Chrome */
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-@-o-keyframes myfirst /* for Opera */
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
+    @font-face {
+        font-family: 'cuprumregular';
+        src: url('font/cuprum-regular-webfont.eot');
+        src: url('font/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/cuprum-regular-webfont.woff') format('woff'), url('font/cuprum-regular-webfont.ttf') format('truetype'), url('font/cuprum-regular-webfont.svg#cuprumregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'intro_regular';
+        src: url('font/intro-webfont.eot');
+        src: url('font/intro-webfont.eot?#iefix') format('embedded-opentype'), url('font/intro-webfont.woff') format('woff'), url('font/intro-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
 
 /* ------------------------------------------------- My StyleSheet ------------------------------------------------- */
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    background: url('img/bg_wood.png') repeat;
-    font: 16px 'cuprumregular';
-}
-
-.i-wrapper {
-    position: relative;
-    height: auto;
-    min-height: 100%;
-    margin: 0 auto;
-}
-
-.i-main {
-	overflow: auto;
-	margin-bottom: 70px;
-}
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        background: url('img/bg_wood.png') repeat;
+        font: 16px 'cuprumregular';
+    }
+    .i-wrapper {
+        position: relative;
+        height: auto;
+        min-height: 100%;
+        margin: 0 auto;
+    }
+    .i-main {
+        overflow: auto;
+        margin-bottom: 70px;
+    }
 
 /*------------------------------------------------- Block Header------------------------------------------------- */
-.b-header {
-    width: 660px;
-    height: 150px;
-    margin: 0 auto;
-    text-align: right;
-    background:  #fff;
-
+    .b-header {
+        width: 660px;
+        height: 150px;
+        margin: 0 auto;
+        text-align: right;
+        background:  #fff;
 }
-
-
-.b-header__position {
-display:inline;
-    padding: 10px 20px;
-    font-size: 1.5em;
-}
+    .b-header__position {
+        display:inline;
+        padding: 10px 20px;
+        font-size: 1.5em;
+    }
 
 /*-------------------------------------------------Block Header Title*/
-.b-header-title {
-    height: 50px;
-    text-align: right;    
-    margin-left: 20px;
-}
+    .b-header-title {
+        height: 50px;
+        text-align: right;
+        margin-left: 20px;
+    }
+    .b-header-title__name {
+        padding: 10px;
+        letter-spacing: 2px;
+        font: 1.5em 'intro_regular';
+        color: #666;
+    }
 
-.b-header-title__name {
-    padding: 10px;
-    letter-spacing: 2px;
-    font: 1.5em 'intro_regular';
-    color: #666;    
-}
 /*-------------------------------------------------Block Contact Info*/
-.b-contact-info{
-	display: block;
-	float:right;
-    text-align: right;  
-	padding: 15px 20px;
-    
-}
-
-.b-contact-info__item {
-
+    .b-contact-info{
+        display: block;
+        float:right;
+        text-align: right;
+        padding: 15px 20px;
 }
 
 /*-------------------------------------------------Block Social Links*/
-
-.b-social-links {
-    display: none;
-}
-
-
+    .b-social-links {
+        display: none;
+    }
 
 /*-------------------------------------------------Block Horizontal Menu*/
-.b-menu-horiz {
-   display:none;
-}
-
+    .b-menu-horiz {
+        display:none;
+    }
 
 /*-------------------------------------------------Block Article-------------------------------------------------*/
-.b-article {
-	display:block !important;
-	text-align: left;
-    width: 562px;
-    height: auto;
-    margin: 0 auto;
-    padding: 20px;
-    opacity: 0.8;
-    background:none;
-}
-
-.b-article__title{
-	display:block !important;
-    font: 1.2em 'intro_regular';
-    margin-bottom: 20px;
-    color:#666;
-}
-
-.b-article__cv-download {
-   display:none;
-}
-
-.b-article__extra {
-    padding: 10px 0;
-    color: #666;
-}
+    .b-article {
+        display:block !important;
+        text-align: left;
+        width: 562px;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        opacity: 0.8;
+        background:none;
+    }
+    .b-article__title{
+        display:block !important;
+        font: 1.2em 'intro_regular';
+        margin-bottom: 20px;
+        color:#666;
+    }
+    .b-article__cv-download {
+        display:none;
+    }
+    .b-article__extra {
+        padding: 10px 0;
+        color: #666;
+    }
 
 /*------------------------------------------------- Unit Blcok*/
-.b-unit {
-    margin: 10px 10px 10px 70px;
-}
-
-.b-unit__text {
-    padding: 0;
-}
-
-.b-unit__date, .b-unit__place {
-    display: inline;
-    font: 1em 'intro_regular';
-}
-
-.b-unit__date {
-    margin-left: -70px;
-    width: auto;
-    float: left;
-}
-
-
+    .b-unit {
+        margin: 10px 10px 10px 70px;
+    }
+    .b-unit__text {
+        padding: 0;
+    }
+    .b-unit__date, .b-unit__place {
+        display: inline;
+        font: 1em 'intro_regular';
+    }
+    .b-unit__date {
+        margin-left: -70px;
+        width: auto;
+        float: left;
+    }
 
 /*-------------------------------------------------Block Portfolio*/
-.b-portfolio__list, .b-article__portfolio-title {
-	display:none; 
-}
-
+    .b-portfolio__list, .b-article__portfolio-title {
+        display:none; 
+    }
 
 /*-------------------------------------------------Block Skills List*/
-.b-skills__skill-name {
-    font: 0.9em 'intro_regular';
-    padding-right: 10px;
-}
+    .b-skills__skill-name {
+        font: 0.9em 'intro_regular';
+        padding-right: 10px;
+    }
 
 /*-------------------------------------------------Block Footer-------------------------------------------------*/
-.b-footer {
-    display: none;
-    }
+    .b-footer {
+        display: none;
+        }

@@ -1,46 +1,37 @@
-body {
- 	text-align: center; /*IE7 block .card centered*/
+	body {
+		text-align: center;	/*IE7 block .card centered*/
 }
-
-.b-article_ie {
-	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; 	/*for IE8*/
-	filter: alpha(opacity=50);		/*for IE7*/
-	width:662px !important;
-}
-
-.i-wrapper {
-	display:table;
-	height:100%;
-}
-
-* html .i-wrapper {
-    height: 100%;
-}
- 
-.b-social-links__link {
-	width:36px\9;
-	height:36px\9;
-
-}
-
-.b-portfolio__item {
-    width: 90px\9 !important;
-    height: 70px\9 !important;
-
-}
-
-.b-header {
-	filter: 
-		progid:DXImageTransform.Microsoft.shadow(direction=0, color=#999999, strength=6)\9
-		progid:DXImageTransform.Microsoft.shadow(direction=90, color=#999999, strength=6)\9
-		progid:DXImageTransform.Microsoft.shadow(direction=270, color=#999999, strength=6)\9;
-	zoom: 1\9;
-}
-
-.b-menu-horiz {
-	filter: progid:DXImageTransform.Microsoft.shadow(direction=180, color=#999999, strength=6)\9
-	progid:DXImageTransform.Microsoft.shadow(direction=91, color=#999999, strength=6)\9
-	progid:DXImageTransform.Microsoft.shadow(direction=271, color=#999999, strength=6)\9;
-	zoom: 1\9;
-	border:none\9 !important;
-}
+	.b-article_ie {
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";	/*for IE8*/
+		filter: alpha(opacity=50);	/*for IE7*/
+		width:662px !important;
+	}
+	.i-wrapper {
+		display:table;
+		height:100%;
+	}
+	* html .i-wrapper {
+		height: 100%;
+	}
+	.b-social-links__link {
+		width:36px\9;
+		height:36px\9;
+	}
+	.b-portfolio__item {
+		width: 90px\9 !important;
+		height: 70px\9 !important;
+	}
+	.b-header {
+		filter: 
+			progid:DXImageTransform.Microsoft.shadow(direction=0, color=#999999, strength=6)\9
+			progid:DXImageTransform.Microsoft.shadow(direction=90, color=#999999, strength=6)\9
+			progid:DXImageTransform.Microsoft.shadow(direction=270, color=#999999, strength=6)\9;
+		zoom: 1\9;
+	}
+	.b-menu-horiz {
+		filter: progid:DXImageTransform.Microsoft.shadow(direction=180, color=#999999, strength=6)\9
+		progid:DXImageTransform.Microsoft.shadow(direction=91, color=#999999, strength=6)\9
+		progid:DXImageTransform.Microsoft.shadow(direction=271, color=#999999, strength=6)\9;
+		zoom: 1\9;
+		border:none\9 !important;
+	}

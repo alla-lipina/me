@@ -1,361 +1,306 @@
 /* ------------------------------------------------- Reset CSS from Yahoo ------------------------------------------------- */
-		body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-		    margin: 0;
-		    padding: 0;
-		}
-		table {
-		    border-collapse: collapse;
-		    border-spacing: 0;
-		}
-		fieldset, img {
-		    border: 0;
-		}
-		address, caption, cite, code, dfn, em, strong, th, var {
-		    font-style: normal;
-		    font-weight: normal;
-		}
-		ol, ul {
-		    list-style: none;
-		}
-		caption, th {
-		    text-align: left;
-		}
-		h1, h2, h3, h4, h5, h6 {
-		    font-size: 100%;
-		    font-weight: normal;
-		}
-		q:before, q:after {
-		    content: '';
-		}
-		abbr, acronym {
-		    border: 0;
-		}
-		img {
-			margin:0;
-			padding:0;
-			border:none;
-		}
+    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+        margin: 0;
+        padding: 0;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    fieldset, img {
+        border: 0;
+    }
+    address, caption, cite, code, dfn, em, strong, th, var {
+        font-style: normal;
+        font-weight: normal;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    caption, th {
+        text-align: left;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 100%;
+        font-weight: normal;
+    }
+    q:before, q:after {
+        content: '';
+    }
+    abbr, acronym {
+        border: 0;
+    }
+    img {
+        margin:0;
+        padding:0;
+        border:none;
+    }
 /* ------------------------------------------------- end of reset ------------------------------------------------- */
 
 /* ------------------------------------------------- Fonts link */
-@font-face {
-    font-family: 'cuprumregular';
-    src: url('font/cuprum-regular-webfont.eot');
-    src: url('font/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/cuprum-regular-webfont.woff') format('woff'), url('font/cuprum-regular-webfont.ttf') format('truetype'), url('font/cuprum-regular-webfont.svg#cuprumregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'intro_regular';
-    src: url('font/intro-webfont.eot');
-    src: url('font/intro-webfont.eot?#iefix') format('embedded-opentype'), url('font/intro-webfont.woff') format('woff'), url('font/intro-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-/* ------------------------------------------------- Animate color for h1 */
-@keyframes myfirst
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-@-moz-keyframes myfirst /* for Firefox */
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-@-webkit-keyframes myfirst /* for Safari and Chrome */
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-@-o-keyframes myfirst /* for Opera */
-{
-0%   {color: #FFEFBF;}
-25%  {color: #BFDFFF;}
-50%  {color: #FFCFBF;}
-100% {color: #ffffff;}
-}
-
-/* ------------------------------------------------- My StyleSheet ------------------------------------------------- */
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-body {
-    background: url('img/bg_wood.png') repeat;
-    font: 16px 'cuprumregular';
-}
-
-.i-wrapper {
-    position: relative;
-    height: auto;
-    min-height: 100%;
-    margin: 0 auto;
-}
-
-.i-main {
-	overflow: auto;
-	margin-bottom: 70px;
-}
-
-/*------------------------------------------------- Block Header------------------------------------------------- */
-.b-header {
-    width: 660px;
-    height: 300px;
-    margin: 5% auto 0;
-    border: 1px solid #000;
-    text-align: right;
-    background:  url('img/profile_pic.png') no-repeat left bottom #fff;
-    box-shadow: 0px -5px 30px #666;
-    -webkit-box-shadow: 0px -5px 30px #666;
-    -moz-box-shadow: 0px -5px 30px #666;
-}
-
-.b-header-title {
-    height: 68px;
-    text-align: right;
-    
-    margin: 20px 20px 0 0;
-    
-    
-}
-.b-header-title__name {
-    float: right;
-    background: #000;
-    padding: 10px;
-    letter-spacing: 2px;
-    font: 2.5em 'intro_regular';
-    color: #fff;
-    animation: myfirst 10s;
-    -moz-animation: myfirst 10s; /* Firefox */
-    -webkit-animation: myfirst 10s; /* Safari and Chrome */
-    -o-animation: myfirst 10s; /* Opera */
-    
-}
-.b-header__position {
-	text-align: right;
-    padding: 10px 20px;
-    font-size: 2.3em;
-}
-
-
-/*-------------------------------------------------Block Contact Info*/
-.b-contact-info{
-	display: block;
-    text-align: right;
-    
-	padding: 15px 20px;
-    
-}
-
-.b-contact-info__item {
-
-}
-
-/*-------------------------------------------------Block Social Links*/
-
-.b-social-links {
-    display: block;
-    width: auto;
-    height: 36px;
-    padding: 5px 20px;
-}
-
-.b-social-links__item {
-    float: right;
-    padding-left: 10px;
-}
-
-.b-social-links__link {
-    line-height: 36px;
-    display: block;
-    height: 36px;
-    width: 36px;
-}
-
-.b-social-links__linkedin {
-    background: url('img/social-in.png') no-repeat;
-}
-.b-social-links__facebook {
-    background: url('img/social-f.png') no-repeat;
-}
-.b-social-links__twitter {
-    background: url('img/social-tw.png') no-repeat;
-}
-
-
-
-/*-------------------------------------------------Block Horizontal Menu*/
-.b-menu-horiz {
-    width: 660px;
-    height: 40px;
-    margin: 0 auto 50px;
-    border: 1px solid #000;
-    box-shadow: 0px 12px 30px #666;
-    -webkit-box-shadow: 0px 12px 30px #666; /*Chrome&Safari*/
-    -moz-box-shadow: 0px 12px 30px #666; /*for Firefox*/
-    font-family: 'intro_regular';
-    background: #000;  
-}
-
-.b-menu-horiz__menu {
-    width: 620px;
-    margin: auto;
-}
-
-.b-menu-horiz__item {
-    float: left;
-    margin: 10px 45px;
-}
-
-.b-menu-horiz__item-link {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.b-menu-horiz__item-link:hover {
-    color: #BFDFFF;
-}
-.b-menu-horiz__item-link_selected {
-	color: #ffd0c0;
-}
-
-
-/*-------------------------------------------------Block Article-------------------------------------------------*/
-.b-article {
-	text-align: left;
-    width: 562px;
-    height: auto;
-    margin: 0 auto;
-    padding: 50px;
-    opacity: 0.8;
-    background:none;
-}
-
-.b-article__title{
-    font: 1.2em 'intro_regular';
-    margin-bottom: 20px;
-}
-
-.b-article__cv-download {
-    font-size: 1.0em;
-    margin: 30px -50px 0 0;
-    padding: 8px;
-    float: right;
-    color: #333;
-	
-    text-decoration: underline;
-}
-
-.b-article__extra, .b-article__portfolio-title {
-    padding: 10px 0;
-	
-    color: #666;
-}
-
-/*------------------------------------------------- Unit Blcok*/
-.b-unit {
-    margin: 10px 10px 10px 70px;
-}
-
-.b-unit__text {
-    padding: 0;
-}
-
-.b-unit__date, .b-unit__place {
-    display: inline;
-    font: 1em 'intro_regular';
-}
-
-.b-unit__date {
-    margin-left: -70px;
-    width: auto;
-    float: left;
-}
-
-
-
-/*-------------------------------------------------Block Portfolio*/
-.b-portfolio__list {
-    height: 90px;
-}
-
-.b-portfolio__item {
-    float: left;
-    width: 80px;
-    height: 50px;
-    border: 1px solid #999;
-    margin-right: 20px;
- 
-    padding: 10px 5px;
-    text-align: center;
-}
-.b-portfolio__link{
-    color: #333;
-}
-
-.b-portfolio__item-tundik {
-    background: url('img/tundik1.png');
-}
-.b-portfolio__item-tundik:hover {
-    background: url('img/tundik.png');
-} 
-
-.b-portfolio__item-game {
-    background: url('img/kalevala1.png');
-}
-.b-portfolio__item-game:hover {
-    background: url('img/kalevala.png');
-}
-
-.b-portfolio__item-card {
-    background: url('img/aqua1.png');
-}
-.b-portfolio__item-card:hover {
-    background: url('img/aqua.png');
+    @font-face {
+        font-family: 'cuprumregular';
+        src: url('font/cuprum-regular-webfont.eot');
+        src: url('font/cuprum-regular-webfont.eot?#iefix') format('embedded-opentype'), url('font/cuprum-regular-webfont.woff') format('woff'), url('font/cuprum-regular-webfont.ttf') format('truetype'), url('font/cuprum-regular-webfont.svg#cuprumregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'intro_regular';
+        src: url('font/intro-webfont.eot');
+        src: url('font/intro-webfont.eot?#iefix') format('embedded-opentype'), url('font/intro-webfont.woff') format('woff'), url('font/intro-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
     }
 
+/* ------------------------------------------------- Animate color for h1 */
+    @keyframes myfirst {
+        0%   {color: #FFEFBF;}
+        25%  {color: #BFDFFF;}
+        50%  {color: #FFCFBF;}
+        100% {color: #ffffff;}
+    }
+    @-moz-keyframes myfirst {
+        0%   {color: #FFEFBF;}
+        25%  {color: #BFDFFF;}
+        50%  {color: #FFCFBF;}
+        100% {color: #ffffff;}
+    }
+    @-webkit-keyframes myfirst {
+        0%   {color: #FFEFBF;}
+        25%  {color: #BFDFFF;}
+        50%  {color: #FFCFBF;}
+        100% {color: #ffffff;}
+    }
+    @-o-keyframes myfirst {
+        0%   {color: #FFEFBF;}
+        25%  {color: #BFDFFF;}
+        50%  {color: #FFCFBF;}
+        100% {color: #ffffff;}
+    }
+
+/* ------------------------------------------------- My StyleSheet ------------------------------------------------- */
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    body {
+        background: url('img/bg_wood.png') repeat;
+        font: 16px 'cuprumregular';
+    }
+    .i-wrapper {
+        position: relative;
+        height: auto;
+        min-height: 100%;
+        margin: 0 auto;
+    }
+    .i-main {
+        overflow: auto;
+    	margin-bottom: 70px;
+    }
+
+/*------------------------------------------------- Block Header------------------------------------------------- */
+    .b-header {
+        width: 660px;
+        height: 300px;
+        margin: 5% auto 0;
+        border: 1px solid #000;
+        text-align: right;
+        background:  url('img/profile_pic.png') no-repeat left bottom #fff;
+        box-shadow: 0px -5px 30px #666;
+        -webkit-box-shadow: 0px -5px 30px #666;
+        -moz-box-shadow: 0px -5px 30px #666;
+    }
+    .b-header-title {
+        height: 68px;
+        text-align: right;
+        margin: 20px 20px 0 0;
+    }
+    .b-header-title__name {
+        float: right;
+        background: #000;
+        padding: 10px;
+        letter-spacing: 2px;
+        font: 2.5em 'intro_regular';
+        color: #fff;
+        animation: myfirst 10s;
+        -moz-animation: myfirst 10s;
+        -webkit-animation: myfirst 10s;
+        -o-animation: myfirst 10s;
+    }
+    .b-header__position {
+        text-align: right;
+        padding: 10px 20px;
+        font-size: 2.3em;
+    }
+
+/*-------------------------------------------------Block Contact Info*/
+    .b-contact-info {
+        display: block;
+        text-align: right;
+        padding: 15px 20px;
+    }
+
+/*-------------------------------------------------Block Social Links*/
+    .b-social-links {
+        display: block;
+        width: auto;
+        height: 36px;
+        padding: 5px 20px;
+    }
+    .b-social-links__item {
+        float: right;
+        padding-left: 10px;
+    }
+    .b-social-links__link {
+        line-height: 36px;
+        display: block;
+        height: 36px;
+        width: 36px;
+    }
+    .b-social-links__linkedin {
+        background: url('img/social-in.png') no-repeat;
+    }
+    .b-social-links__facebook {
+        background: url('img/social-f.png') no-repeat;
+    }
+    .b-social-links__twitter {
+        background: url('img/social-tw.png') no-repeat;
+    }
+
+/*-------------------------------------------------Block Horizontal Menu*/
+    .b-menu-horiz {
+        width: 660px;
+        height: 40px;
+        margin: 0 auto 50px;
+        border: 1px solid #000;
+        box-shadow: 0px 12px 30px #666;
+        -webkit-box-shadow: 0px 12px 30px #666;
+        -moz-box-shadow: 0px 12px 30px #666;
+        font-family: 'intro_regular';
+        background: #000;
+    }
+    .b-menu-horiz__menu {
+        width: 620px;
+        margin: auto;
+    }
+    .b-menu-horiz__item {
+        float: left;
+        margin: 10px 45px;
+    }
+    .b-menu-horiz__item-link {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    .b-menu-horiz__item-link:hover {
+        color: #BFDFFF;
+    }
+    .b-menu-horiz__item-link_selected {
+        color: #ffd0c0;
+    }
+
+/*-------------------------------------------------Block Article-------------------------------------------------*/
+    .b-article {
+        text-align: left;
+        width: 562px;
+        height: auto;
+        margin: 0 auto;
+        padding: 50px;
+        opacity: 0.8;
+        background:none;
+    }
+    .b-article__title{
+        font: 1.2em 'intro_regular';
+        margin-bottom: 20px;
+    }
+    .b-article__cv-download {
+        font-size: 1.0em;
+        margin: 30px -50px 0 0;
+        padding: 8px;
+        float: right;
+        color: #333;
+        text-decoration: underline;
+    }
+    .b-article__extra, .b-article__portfolio-title {
+        padding: 10px 0;
+        color: #666;
+    }
+
+/*------------------------------------------------- Unit Blcok*/
+    .b-unit {
+        margin: 10px 10px 10px 70px;
+    }
+    .b-unit__text {
+        padding: 0;
+    }
+    .b-unit__date, .b-unit__place {
+        display: inline;
+        font: 1em 'intro_regular';
+    }
+    .b-unit__date {
+        margin-left: -70px;
+        width: auto;
+        float: left;
+    }
+
+/*-------------------------------------------------Block Portfolio*/
+    .b-portfolio__list {
+        height: 90px;
+    }
+    .b-portfolio__item {
+        float: left;
+        width: 80px;
+        height: 50px;
+        border: 1px solid #999;
+        margin-right: 20px;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    .b-portfolio__link{
+        color: #333;
+    }
+    .b-portfolio__item-tundik {
+        background: url('img/tundik1.png');
+    }
+    .b-portfolio__item-tundik:hover {
+        background: url('img/tundik.png');
+    }
+    .b-portfolio__item-game {
+        background: url('img/kalevala1.png');
+    }
+    .b-portfolio__item-game:hover {
+        background: url('img/kalevala.png');
+    }
+    .b-portfolio__item-card {
+        background: url('img/aqua1.png');
+    }
+    .b-portfolio__item-card:hover {
+        background: url('img/aqua.png');
+    }
 
 /*-------------------------------------------------Block Skills List*/
-.b-skills__skill-name {
-    font: 0.9em 'intro_regular';
-    padding-right: 10px;
-}
+    .b-skills__skill-name {
+        font: 0.9em 'intro_regular';
+        padding-right: 10px;
+    }
 
 /*-------------------------------------------------Block Footer-------------------------------------------------*/
-.b-footer {
-    position: relative;
-    width: 660px;
-    height: 50px;
-    text-align: center;
-    margin: -50px auto 0px;
-
-}
-
-.b-footer__text {
-    
-    color: #666; 
-}
-
-.b-footer__link {
-    font: 0.8em 'intro_regular';
-    text-decoration: none;
-    color: #666;
-}
-
-.b-footer__link:hover {
-    text-decoration: underline;
-}
+    .b-footer {
+        position: relative;
+        width: 660px;
+        height: 50px;
+        text-align: center;
+        margin: -50px auto 0px;
+    }
+    .b-footer__text {
+        color: #666;
+    }
+    .b-footer__link {
+        font: 0.8em 'intro_regular';
+        text-decoration: none;
+        color: #666;
+    }
+    .b-footer__link:hover {
+        text-decoration: underline;
+    }
