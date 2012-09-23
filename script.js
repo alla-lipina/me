@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('.b-article, .b-article__title').hide();
 
-	$('.b-menu-horiz__item-link').click((function(){
+	$('.b-menu-horiz__item-link').click(function(){
 
 		if (!$($(this).attr('href')).is(':visible')){
 
