@@ -1,1 +1,1 @@
-## text here
+анкета для школы разработки интерфейсов Яндекс – http://lipina.github.com/me/
